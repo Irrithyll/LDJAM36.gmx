@@ -78,11 +78,13 @@ depth = depth - instance_number(obj_textbox_new);
             <string>draw_set_alpha(alpha);
 if(alpha &lt; 1) alpha += spd/5; else alpha =1;
 
+//draw_background(bg_diamondtext,x-20,y+20);
 draw_set_font(font);
 draw_set_color(c_white);
 draw_rectangle(x,y,x+boxwidth,y+boxheight,0);
 draw_set_color(c_dkgray);
 draw_rectangle(x,y,x+boxwidth,y+boxheight,1);
+
 
 draw_set_color(c_black);
 draw_set_halign(fa_left);

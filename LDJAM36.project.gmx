@@ -6,15 +6,66 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\sprite9</sprite>
     <sprite>sprites\spr_customer_01</sprite>
     <sprite>sprites\spr_customer_02</sprite>
     <sprite>sprites\spr_customer_03</sprite>
     <sprite>sprites\spr_bg</sprite>
     <sprite>sprites\spr_vhs</sprite>
     <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\spr_poster1</sprite>
+    <sprite>sprites\spr_poster2</sprite>
+    <sprite>sprites\overlay</sprite>
+    <sprites name="People Parts">
+      <sprites name="Base">
+        <sprite>sprites\spr_base_0</sprite>
+        <sprite>sprites\spr_base_1</sprite>
+        <sprite>sprites\spr_base_2</sprite>
+      </sprites>
+      <sprites name="mouth">
+        <sprite>sprites\spr_mouth_0</sprite>
+        <sprite>sprites\spr_mouth_1</sprite>
+        <sprite>sprites\spr_mouth_2</sprite>
+        <sprite>sprites\spr_mouth_3</sprite>
+      </sprites>
+      <sprites name="nose">
+        <sprite>sprites\spr_nose_0</sprite>
+        <sprite>sprites\spr_nose_1</sprite>
+        <sprite>sprites\spr_nose_2</sprite>
+        <sprite>sprites\spr_nose_3</sprite>
+      </sprites>
+      <sprites name="hair">
+        <sprite>sprites\spr_hair_0</sprite>
+        <sprite>sprites\spr_hair_1</sprite>
+        <sprite>sprites\spr_hair_2</sprite>
+        <sprite>sprites\spr_hair_3</sprite>
+        <sprite>sprites\spr_hair_4</sprite>
+        <sprite>sprites\spr_hair_5</sprite>
+        <sprite>sprites\spr_hair_6</sprite>
+        <sprite>sprites\spr_hair_7</sprite>
+        <sprite>sprites\spr_hair_8</sprite>
+        <sprite>sprites\spr_hair_9</sprite>
+        <sprite>sprites\spr_hair_10</sprite>
+        <sprite>sprites\spr_hair_11</sprite>
+        <sprite>sprites\spr_hair_12</sprite>
+      </sprites>
+      <sprites name="brows">
+        <sprite>sprites\spr_brow_0</sprite>
+        <sprite>sprites\spr_brow_1</sprite>
+        <sprite>sprites\spr_brow_2</sprite>
+        <sprite>sprites\spr_brow_3</sprite>
+      </sprites>
+      <sprites name="shirts">
+        <sprite>sprites\spr_shirt_0</sprite>
+        <sprite>sprites\spr_shirt_1</sprite>
+        <sprite>sprites\spr_shirt_2</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_diamondtext</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\bg_diamondtext</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -27,12 +78,22 @@
     <font>fonts\fnt</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_customer</object>
+    <objects name="customer">
+      <object>objects\obj_customer</object>
+      <object>objects\obj_hair</object>
+      <object>objects\obj_mouth</object>
+      <object>objects\obj_brows</object>
+      <object>objects\obj_nose</object>
+      <object>objects\obj_shirt</object>
+    </objects>
     <object>objects\obj_vhs</object>
     <object>objects\level_manager</object>
-    <object>objects\obj_textbox</object>
-    <object>objects\obj_textboxsprite</object>
     <object>objects\obj_textbox_new</object>
+    <objects name="bg">
+      <object>objects\bg_poster1</object>
+      <object>objects\bg_poster2</object>
+      <object>objects\bg_overlay</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
