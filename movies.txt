@@ -1,0 +1,50 @@
+#MOVIE ID
+#MOVIE TITLE
+#GENRE
+#DESCRIPTION
+#CUSTOMER DESCRIPTION 01
+#CUSTOMER DESCRIPTION 02
+#CUSTOMER DESCRIPTION 03
+#..
+@000
+FERRIS SKIPS SCHOOL AND COMMITS MINOR CRIMES
+COMEDY,ADVENTURE
+A kid skips school by pretending to be sick. He drags his friends along for the ride of their life on a day off in the city, committing minor crimes and avoiding responsibiliy.
+a silly movie about wagging school.
+something cheerful and mischevious.
+@001
+SHROK
+COMEDY,ADVENTURE,ROMANCE
+An unlikely pair, an orge and a talking donkey set off on an epic quest to save a princess.
+a movie about an adventure#to rescue a princess.
+a movie with a talking donkey.
+a movie with an ogre in it.
+@002
+BOY & ALIEN
+FANTASY,SCIENCE-FICTION
+An alien crashlands on Earth and is befriended by a human boy.
+a movie about a friendly alien.
+a movie about friendship.
+@003
+PRINCE GROOM
+FANTASY
+A fairy tale adventure about a handsome young man and his one true love.
+a movie about true love.
+a fairy tale movie.
+a movie about a fairy tale book.
+@004
+GRIMLINZ
+FANTASY
+Small seemingly innocent creatures hold a secret. Just don't get them wet, or feed them after midnight!
+a movie about cute and evil creatures.
+the movie where you can't feed#them after midnight.
+the movie about the creatures#you can't get wet.
+@005
+TOO MANY CANDLES
+TEEN-FILM,ROMANCE
+John Hughes directs another adorable teen film about angst and romance. It has weddings and birthdays.
+a movie with romance and candles.
+a movie by director John Hughes.
+@006
+
+

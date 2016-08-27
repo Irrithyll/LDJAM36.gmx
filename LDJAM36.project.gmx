@@ -3,6 +3,42 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles">
+    <datafile>
+      <name>phrases.txt</name>
+      <exists>-1</exists>
+      <size>244</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>phrases.txt</filename>
+    </datafile>
+    <datafile>
+      <name>movies.txt</name>
+      <exists>-1</exists>
+      <size>456</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>movies.txt</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -62,6 +98,11 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_diamondtext</sprite>
+    <sprite>sprites\sprite45</sprite>
+    <sprite>sprites\spr_shelf</sprite>
+    <sprite>sprites\spr_shelf_bar</sprite>
+    <sprite>sprites\spr_vhscase</sprite>
+    <sprite>sprites\spr_hightlightbox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -93,7 +134,11 @@
       <object>objects\bg_poster1</object>
       <object>objects\bg_poster2</object>
       <object>objects\bg_overlay</object>
+      <object>objects\bg_shelf</object>
+      <object>objects\bg_shelfbar</object>
     </objects>
+    <object>objects\obj_vhscase</object>
+    <object>objects\obj_highligher</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -25,19 +25,74 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mood = noone;
+            <string>
+//set random base
+
+randomize();
+
+random_number = irandom_range(0,3);
+
+switch(random_number){
+case 0:
+    sprite_index = spr_base_0;
+    break;
+case 1:
+    sprite_index = spr_base_1;
+    break;
+case 2:
+    sprite_index = spr_base_2;
+    break;
+}
+
 time_left = 30;
 genre = noone;
-movie = noone;
+movie_id = noone;
+movie_name = noone;
+customer_description = noone;
 
+firstPhrase = "butts#";
 mood = randomly_generate("MOVIE");
 
-firstPhrase = "I am looking for#";
+//fetch their opening phrase
+file = file_text_open_read(working_directory + "phrases.txt");
+
+rn = irandom_range(1,13);
+
+for (i = 0; i &lt; rn; i++){
+    file_text_readln(file);
+}
+
+firstPhrase = file_text_read_string(file) + "#";
+
+file_text_close(file);
+
+rn2 = irandom_range(0,12);
+rn3 = irandom_range(0,2);
+
+movie_id = MOVIE_IDS[rn2];
+movie_name = MOVIE_NAMES[rn2];
+
+switch(rn3){
+    case 0:
+        customer_description = CUSTOMER_DESCRIPTIONS1[rn2];
+        break;
+    case 1:
+        customer_description = CUSTOMER_DESCRIPTIONS2[rn2];
+        break;
+    case 2:
+        customer_description = CUSTOMER_DESCRIPTIONS3[rn2];
+        break;
+}
+
+
+
+
 secondPhrase = "a movie about a kid#who learns karate.";
+secondPhrase = customer_description;
 customer_text = "";
 customer_text = firstPhrase + secondPhrase;
 
-script_text(customer_text, 0.5, 700 ,400);
+script_text(customer_text, 0.5, 600 ,400);
 
 </string>
           </argument>
@@ -61,24 +116,7 @@ script_text(customer_text, 0.5, 700 ,400);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//set random base
-
-randomize();
-
-random_number = irandom_range(0,3);
-
-switch(random_number){
-case 0:
-    sprite_index = spr_base_0;
-    break;
-case 1:
-    sprite_index = spr_base_1;
-    break;
-case 2:
-    sprite_index = spr_base_2;
-    break;
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -100,7 +138,12 @@ case 2:
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//x = 200;
+            <string>x -= 100;
+obj_hair.x -= 100;
+obj_mouth.x -= 100;
+obj_brows.x -= 100;
+obj_nose.x -= 100;
+obj_shirt.x -= 100;
 </string>
           </argument>
         </arguments>

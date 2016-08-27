@@ -32,6 +32,95 @@ good_rentals  = 0;
 bad_rentals = 0;
 shift_duration = 5;
 
+
+globalvar MOVIE_IDS;
+globalvar MOVIE_NAMES;
+globalvar MOVIE_GENRES;
+globalvar MOVIE_DESCRIPTIONS;
+globalvar CUSTOMER_DESCRIPTIONS1;
+globalvar CUSTOMER_DESCRIPTIONS2;
+globalvar CUSTOMER_DESCRIPTIONS3;
+
+movie_id = "";
+movie_name = "";
+movie_genre = "";
+movie_description = "";
+movied1 = "";
+movied2 = "";
+movied3 = "";
+
+//fetch a movie for them to ask about
+filemovies = file_text_open_read(working_directory + "movies.txt");
+
+for (j = 0; j &lt;= 12; j++){
+    movie_id = file_text_read_string(filemovies);
+    show_debug_message("debug msg:" + movie_id);
+    file_text_readln(filemovies);
+    //MOVIE_IDS[j] = file_text_read_string(filemovies);
+    movie_name = file_text_read_string(filemovies);
+    show_debug_message("debug msg:" + movie_name);
+    MOVIE_NAMES[j] = file_text_read_string(filemovies);
+    file_text_readln(filemovies);
+    MOVIE_GENRES[j] = file_text_read_string(filemovies);
+    file_text_readln(filemovies);
+    MOVIE_DESCRIPTIONS[j] = file_text_read_string(filemovies);
+    file_text_readln(filemovies);
+    CUSTOMER_DESCRIPTIONS1[j] = file_text_read_string(filemovies);
+    file_text_readln(filemovies);
+    CUSTOMER_DESCRIPTIONS2[j] = file_text_read_string(filemovies);
+    file_text_readln(filemovies);
+    CUSTOMER_DESCRIPTIONS3[j] = file_text_read_string(filemovies);
+    file_text_readln(filemovies);
+    
+    
+}    
+
+file_text_close(filemovies);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_restart();
 </string>
           </argument>
         </arguments>
