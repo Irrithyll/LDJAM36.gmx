@@ -55,7 +55,7 @@
     <instance objName="bg_poster1" x="161" y="220" name="inst_446167F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bg_poster2" x="809" y="285" name="inst_DC37D81D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bg_overlay" x="-32" y="-28" name="inst_573FCCB8" locked="0" code="" scaleX="5.83385562896729" scaleY="2.97178673744202" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hair" x="513" y="383" name="inst_E348C701" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hair" x="518" y="378" name="inst_E348C701" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mouth" x="553" y="492" name="inst_E6BB5589" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nose" x="547" y="436" name="inst_F337BF06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brows" x="527" y="372" name="inst_0484F510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
