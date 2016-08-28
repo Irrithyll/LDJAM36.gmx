@@ -8,6 +8,167 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>MOVIE_IDS[0] = "000";
+MOVIE_IDS[1] = "001";
+MOVIE_IDS[2] = "002";
+MOVIE_IDS[3] = "003";
+MOVIE_IDS[4] = "004";
+MOVIE_IDS[5] = "005";
+MOVIE_IDS[6] = "006";
+MOVIE_IDS[7] = "007";
+MOVIE_IDS[8] = "008";
+MOVIE_IDS[9] = "009";
+MOVIE_IDS[10] = "0010";
+MOVIE_IDS[11] = "0011";
+MOVIE_IDS[12] = "0012";
+
+MOVIE_NAMES[0] = "FERRIS SKIPS";
+MOVIE_NAMES[1] = "SHROK";
+MOVIE_NAMES[2] = "BOY &amp; ALIEN";
+MOVIE_NAMES[3] = "PRINCE GROOM";
+MOVIE_NAMES[4] = "GRIMLINS";
+MOVIE_NAMES[5] = "TOO MANY CANDLES";
+MOVIE_NAMES[6] = "LARGE";
+MOVIE_NAMES[7] = "KID ALONE";
+MOVIE_NAMES[8] = "REKALL";
+MOVIE_NAMES[9] = "BOYS GO NUTS";
+MOVIE_NAMES[10] = "WHOOPS";
+MOVIE_NAMES[11] = "BINARY";
+MOVIE_NAMES[12] = "RETAIL SUCKS";
+
+MOVIE_DESCRIPTIONS[0] = "A kid skips school by#pretending to be sick.#He drags hisfriends#along for the ride#of their life on#a day off in the#city, committing minor#crimes.";
+MOVIE_DESCRIPTIONS[1] = "An unlikely pair, an#orge and a talking#donkey set off on#an epic quest to#save a princess.";
+MOVIE_DESCRIPTIONS[2] = "An alien crashlands on#Earth and is befriended#by a human boy.";
+MOVIE_DESCRIPTIONS[3] = "A fairy tale adventure#about a handsome young#man and his one#true love.";
+MOVIE_DESCRIPTIONS[4] = "Small seemingly innocent#creatures hold a#secret. Just don't get#them wet, or feed them#after midnight!";
+MOVIE_DESCRIPTIONS[5] = "John Hughes directs another#adorable teen film#about angst and romance.#It has weddings and#birthdays.";
+MOVIE_DESCRIPTIONS[6] = "A wish goes horribly#wrong when a twelve#year old magically#has the body of a#thirty year old man.";
+MOVIE_DESCRIPTIONS[7] = "A misbehaving child#gets completely forgotten#by his parents as#they go on a holiday.#People try to rob#his house and he#uses his witts to#defend his home.";
+MOVIE_DESCRIPTIONS[8] = "A guy in the year 2084#dreams about visiting#mars by having false#memories implanted,#however something goes wrong#and he isn't#sure what's real#or not anymore.";
+MOVIE_DESCRIPTIONS[9] = "A group of young boys#get stranded on a#desserted island and#go a bit nuts#without supervision.";
+MOVIE_DESCRIPTIONS[10] = "A movie about ambitious#scientists that cloned#dinosaurs for an amusement#park. However, all goes#astray when the dinosaurs#get loose and start#eating the guests.";
+MOVIE_DESCRIPTIONS[11] = "When a man questions his#reality, he can manipulate#it and becomes an action#hero. Will he be able to#free humanity from#their slavery and false#reality?";
+MOVIE_DESCRIPTIONS[12] = "When a guy who works has#to cover an extra shift,#his bitterness isn't the#only thing that's off#the rails. Hockey,#funerals, selling ciggerates#to kids, it went downhill#fast.";
+
+MOVIE_GENRES[0] = "COMEDY";
+MOVIE_GENRES[1] = "COMEDY";
+MOVIE_GENRES[2] = "FANTASY";
+MOVIE_GENRES[3] = "FANTASY";
+MOVIE_GENRES[4] = "FANTASY";
+MOVIE_GENRES[5] = "ROMANCE";
+MOVIE_GENRES[6] = "FANTASY";
+MOVIE_GENRES[7] = "COMEDY";
+MOVIE_GENRES[8] = "SCIENCE-FICTION";
+MOVIE_GENRES[9] = "DRAMA";
+MOVIE_GENRES[10] = "FANTASY";
+MOVIE_GENRES[11] = "FANTASY";
+MOVIE_GENRES[12] = "INDIE";
+
+//randomly pick a movie
+movie_id = noone;
+movie_name = noone;
+movie_description = noone;
+movie_genre = noone;
+
+rn4 = irandom_range(0,12);
+
+movie_id = MOVIE_IDS[rn4];
+movie_name = MOVIE_NAMES[rn4];
+movie_description = MOVIE_DESCRIPTIONS[rn4];
+movie_genre = MOVIE_GENRES[rn4];
+
+show_debug_message("movie choice was " + string(moviechoice));
+
+    switch(rn4){
+        case(0):
+            sprite_index = spr_movie000;
+            break;
+        case(1):
+            sprite_index = spr_movie001;
+            break;
+        case(2):
+            sprite_index = spr_movie002;
+            break;
+        case(3):
+            sprite_index = spr_movie003;
+            break;
+        case(4):
+            sprite_index = spr_movie004;
+            break;
+        case(5):
+            sprite_index = spr_movie005;
+            break;
+        case(6):
+            sprite_index = spr_movie006;
+            break;
+        case(7):
+            sprite_index = spr_movie007;
+            break;
+        case(8):
+            sprite_index = spr_movie008;
+            break;
+        case(9):
+            sprite_index = spr_movie009;
+            break;
+        case(10):
+            sprite_index = spr_movie010;
+            break;
+        case(11):
+            sprite_index = spr_movie011;
+            break;
+        case(12):
+            sprite_index = spr_movie012;
+            break;
+    
+    }
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_restart();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,12 +186,134 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_highligher.x = -150;
-obj_highligher.y = -150;
+            <string>MOVIE_IDS[0] = "000";
+MOVIE_IDS[1] = "001";
+MOVIE_IDS[2] = "002";
+MOVIE_IDS[3] = "003";
+MOVIE_IDS[4] = "004";
+MOVIE_IDS[5] = "005";
+MOVIE_IDS[6] = "006";
+MOVIE_IDS[7] = "007";
+MOVIE_IDS[8] = "008";
+MOVIE_IDS[9] = "009";
+MOVIE_IDS[10] = "0010";
+MOVIE_IDS[11] = "0011";
+MOVIE_IDS[12] = "0012";
+
 
 if (position_meeting(mouse_x, mouse_y, self)) {
     obj_highligher.x = self.x-70;
     obj_highligher.y = self.y-70;
+    
+
+    //show_debug_message("movie: " + movie_id + " " + movie_name);
+    
+    if(mouse_check_button_pressed(mb_left)){
+        if(movie_id == MOVIE_IDS[moviechoice]){
+            with(obj_textbox_new){
+                instance_destroy();
+            }
+            script_text("Thanks! That's what I wanted!", 0.5, 600 ,400);
+            level_manager.good_rentals++;
+            level_manager.money+=15;
+            instance_destroy();
+        }else if(movie_genre == MOVIE_GENRES[moviechoice]){
+            with(obj_textbox_new){
+                instance_destroy();
+            }
+            script_text("This will do.", 0.5, 600 ,400);
+            level_manager.good_rentals++;
+            level_manager.money+=10;
+            instance_destroy();
+        
+        }else{
+            with(obj_textbox_new){
+                instance_destroy();
+            }
+            script_text("Ugh! That's not what I wanted!", 0.5, 600 ,400);
+            level_manager.money-=25;
+            level_manager.bad_rentals++;
+            instance_destroy();
+        }
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (position_meeting(mouse_x, mouse_y, self)) {
+        
+    draw_set_color(c_silver);
+    draw_rectangle(300,16,620,180,0);
+    draw_set_color(c_black);
+    draw_rectangle(300,16,620,180,1);
+    
+    draw_text_transformed(300,16, string(movie_name) + " | " + string(movie_genre) + "#" + string(movie_description),0.5,0.5,0) 
+
+    //string_width_ext("THIS IS A MOVIE " + string(movie_id),400, 16);
 }
 
 </string>

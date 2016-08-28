@@ -103,6 +103,25 @@
     <sprite>sprites\spr_shelf_bar</sprite>
     <sprite>sprites\spr_vhscase</sprite>
     <sprite>sprites\spr_hightlightbox</sprite>
+    <sprite>sprites\sprite65_titlw</sprite>
+    <sprite>sprites\sprite66</sprite>
+    <sprite>sprites\spr_white</sprite>
+    <sprites name="spr_movies">
+      <sprite>sprites\spr_movie006</sprite>
+      <sprite>sprites\spr_movie002</sprite>
+      <sprite>sprites\spr_movie000</sprite>
+      <sprite>sprites\spr_movie012</sprite>
+      <sprite>sprites\spr_movie001</sprite>
+      <sprite>sprites\spr_movie003</sprite>
+      <sprite>sprites\spr_movie009</sprite>
+      <sprite>sprites\spr_movie005</sprite>
+      <sprite>sprites\spr_movie007</sprite>
+      <sprite>sprites\spr_movie004</sprite>
+      <sprite>sprites\spr_movie008</sprite>
+      <sprite>sprites\spr_movie011</sprite>
+      <sprite>sprites\spr_movie010</sprite>
+      <sprite>sprites\spr_score</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -114,6 +133,7 @@
     <script>scripts\randomly_generate.gml</script>
     <script>scripts\script2.gml</script>
     <script>scripts\script_text.gml</script>
+    <script>scripts\reset_customer.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -139,9 +159,17 @@
     </objects>
     <object>objects\obj_vhscase</object>
     <object>objects\obj_highligher</object>
+    <object>objects\obj_whitesprite</object>
+    <object>objects\obj_score</object>
+    <object>objects\main_menu</object>
+    <object>objects\title_sprite</object>
+    <object>objects\pressenter</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\title</room>
+    <room>rooms\main</room>
+    <room>rooms\gameover</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
